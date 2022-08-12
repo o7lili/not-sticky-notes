@@ -4,7 +4,9 @@ const express = require('express');
 const app = express();
 
 app.get('/api/notes', (req, res) => {
-    res.json(notes);
+    let results = notes;
+    console.log(req.query)
+    res.json(results);
 });
 
 app.listen(3001, () => {
