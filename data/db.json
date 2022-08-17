@@ -1,5 +1,5 @@
-{
-  "notes": [
+
+  [
     {
       "title": "Test Title",
       "text": "Test text"
@@ -9,13 +9,12 @@
       "text": "Test 2 text"
     },
     {
-      "name": "Larry",
-      "species": "lemur",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry"
-      ],
-      "id": "2"
+      "title": "test 3",
+      "text": "text text"
+    },
+    {
+      "title": "Groceries",
+      "text": "apples\nbread\ndeli meat\ntomatoes\nlettuce\ncucumber",
+      "id": "3"
     }
   ]
-}
