@@ -1,10 +1,8 @@
 const router = require('express').Router();
 const noteBook = require ('../../data/app.js');
-
 router.get('/notes', (req, res) => {
-    noteBook
-        .getNotes()
-        .then((notes) => {
+    noteBook.getNotes()
+    .then((notes) => {
             console.log('line 8', JSON.stringify(notes));
            return res.json(notes)
         })
@@ -12,10 +10,9 @@ router.get('/notes', (req, res) => {
             res.status(500).json(err)
         })
 });
-
 router.post('/notes', (req, res) => {
-    noteBook
-        .addNote(req.body)
+    console.log(req.body)
+    noteBook.addNote(req.body)
         .then((note) => {
             return res.json(note)
         })
@@ -24,7 +21,6 @@ router.post('/notes', (req, res) => {
         })
 
     // set id based on what the next index of the array will be
-    // console.log(req.body)
     // req.body.id = notes.length.toString();
 
     // if any data in req.body is incorrect, send 400 error back
