@@ -1,6 +1,6 @@
 # Note Taker Starter Code
 
-## deployed app: https://evening-brook-32175.herokuapp.com/
+deployed app: https://evening-brook-32175.herokuapp.com/
 
 ## Description
 Basic note taker app, pre-loaded with messy test notes and a grocery list. (did not have time to make delete function work)
